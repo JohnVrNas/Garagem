@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garagem</title>
+    <link rel="stylesheet" href="style_carro.css">
+</head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="index.html">Adicionar Carro</a></li>
+                <li><a href="/contato/index.html">Contato</a></li>
+                <li><a href="#">Perfil</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="container">
+                <section class="header">
+                    <h2>Adicione seu carro</h2>
+                </section>    
+
+                <form action="/index.html" class="form" method="post">
+                    <div class="form-content">
+                        <label for="">Marca:</label>
+                        <input type="text" placeholder="Digite a marca do carro">
+                    </div>    
+
+                    <div class="form-content">
+                        <label for="">Modelo:</label>
+                        <input type="text" placeholder="Digite o modelo">
+                    </div>
+
+                     <div class="form-content">
+                        <label for="">Ano:</label>
+                        <input type="number" placeholder="Digite o ano do carro">
+                    </div>
+
+                    <div class="form-content">
+                        <label for="">Combustível:</label>
+                        <select>
+                            <option value=""></option>
+                            <option value="Flex">Flex</option>
+                            <option value="Álcool">Álcool</option>
+                            <option value="Gasolina">Gasolina</option>
+                            <option value="Elétrico">Elétrico</option>
+                        </select>
+                    </div>
+
+                    <div class="form-content">
+                        <label for="">Cambio:</label>
+                        <select>
+                            <option value=""></option>
+                            <option value="Manual">Manual</option>
+                            <option value="Automático">Automático</option>
+                            <option value="Semi-automático">Semi-automático</option>
+                        </select>
+                    </div>
+
+                    <div class="form-content">
+                        <label for="">Data de aquisição:</label>
+                        <input type="date" required>
+                    </div> 
+
+                    <div class="form-content">
+                        <label for="">Preço:</label>
+                        <input type="text" placeholder="R$">
+                    </div>  
+
+                    <div class="form-content">
+                        <label for="">Tipo:</label>
+                        <select>
+                            <option value=""></option>
+                            <option value="Sedã">Sedã</option>
+                            <option value="SUV">SUV</option>
+                            <option value="Picape">Picape</option>
+                            <option value="Hatch">Hatch</option>
+                            <option value="Crossover">Crossover</option>
+                            <option value="Perua">Perua</option>
+                            <option value="Minivan">Minivan</option>
+                            <option value="Furgão">Furgão</option>
+                            <option value="Esportivo">Esportivo</option>
+
+
+                        </select>
+                    </div>
+                    
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </div>
+        </main>    
+    </body>
+</html>

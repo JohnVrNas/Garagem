@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lobster", sans-serif;
+}
+
+/* Menu de navegação */
+nav{
+    list-style: none;
+    background-color: black;
+    font-family: "Lobster", sans-serif;
+}
+
+nav li{
+    display: inline; 
+}
+
+nav li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+
+nav li a:hover{
+    background-color: white;
+    color: black;
+    transition: 0.4s;
+}
+
+nav ul li:last-child a {
+    float: right;
+    background-color: white;
+    color: black;
+}
+
+/* Pagina principal */
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #734E20;
+}
+
+/* Card de item */
+.card{
+    position: relative;
+    width: 320px;
+    height: 420px;
+    background-color: #D99441;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card:before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: black ;
+    transform: skewY(340deg);
+    transition: 0.5s;
+}
+
+.card:hover::before{
+    transform: skewY(390deg);
+    top: -70%;
+}
+
+.card::after{
+    content: 'Carro';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 6em;
+    color: rgba(0, 0, 0, 0.1);
+    letter-spacing: 6px;
+}
+
+/* Imagem do card */
+.card .imgCard{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+
+}
+
+.card .imgCard img{
+    max-width: 100%;
+    transition: 0.5s;
+
+}
+.card:hover .imgCard img{
+    max-width: 110%;
+}
+
+/* Conteúdo do card */
+.card .contentCard{
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.card .contentCard h3{
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.card .contentCard .price{
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.card .contentCard .ver{
+    position: relative;
+    top: 200px;
+    opacity: 0;
+    padding: 10px 30px;
+    margin-top: 15px;
+    text-decoration: none;
+    background: #F2B441;
+    border-radius: 30px;
+    color: #734E20;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+.card:hover .contentCard .ver{
+    top: 0px;
+    opacity: 1;
+}
+
+
